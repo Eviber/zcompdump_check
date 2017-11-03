@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DUMPLIST=`ls -1a ~/.zcompdump-e* | cut -c 26- | cut -c -7 | tr -d '-'`
+DUMPLIST=`ls -1a ~/.zcompdump-e* | cut -d - -f 2`
 
 # $1 = E, $2 = R
 getrowsize()
